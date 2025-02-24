@@ -1,0 +1,79 @@
+.contact-welcome-page{
+    background-image: url(/assets/img/contact-bg.png);
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.c-line{   
+    border: 5px solid #F79830;
+    width: 238px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+.contact-title h1{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.4px; /* 66% */
+    text-transform: uppercase;
+    padding-top: 128px;
+}
+.contact-title p{
+    color: #FAFAFA;
+    font-family: "Montserrat", serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 23px; /* 176.923% */
+    letter-spacing: 0.5px;
+}
+
+.google-map{
+    position: relative; 
+    overflow: hidden;
+    height:600px;
+    margin-top: 40px;
+}
+
+.contact-container{
+    height: 201px;
+    min-height: 1px;
+    padding: 50px 35px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 2px;
+    background: #FFF;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.16);
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.contact-container h2{
+    color: #F39F07;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 35px; 
+}
+.contact-row{
+    display: flex;
+    margin-top: 10px;
+    gap: 30px;
+}
+.con li{
+    color: #4C4C4C;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px; 
+}
+
+.con li img{
+    margin-top: 8px;
+    margin-right: 10px;
+}
