@@ -37,6 +37,8 @@ body{
     max-width: 1140px;
     margin: 0 auto;
 }
+
+
 /* ----------------navbar - start ------------------------*/
 .navbar-top {
     height: 34px;
@@ -150,8 +152,9 @@ body{
     position: relative;
 }
 
+
 .navbar-options .dropdown-menu {
-    display: none;
+    display: block;
     position: absolute;
     top: 100%;
     left: 0;
@@ -161,6 +164,10 @@ body{
     min-width: 70px;
     padding: 10px 0;
     z-index: 2000;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: .3s ease-in-out;
 }
 .navbar-options .dropdown-menu li {
     padding: 5px 15px;
@@ -173,7 +180,9 @@ body{
     font-size: 12px;
 }
 .navbar-options .dropdown:hover .dropdown-menu {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
 }
 .caret {
     color: #00F;
@@ -259,7 +268,6 @@ body{
     font-size: 24px;
     font-weight: 300;
     line-height: 26.4px;
-    margin-top: 80px;
 }
 
 .languages {
@@ -317,23 +325,20 @@ body{
 }
 
 .after-l {
-    margin-top: 140px;
+    margin-top: 30px;
 }
-
-.icdo-box video {
-    margin-top: 80px;
-}
-
 .article img {
     width: 845.5px;
     height: 563.66px;
+    transition: filter 0.4s ease;
 }
-
+.article:hover {
+    filter: brightness(0.8); 
+}
 .card1-main {
     display: flex;
     gap: 30px;
 }
-
 .content-for-article {
     height: 550px;
     background-color: #FFF;
@@ -401,7 +406,6 @@ body{
 .card-main {
     width: 357px;
     background: #fff;
-    border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
@@ -412,7 +416,6 @@ body{
 .card-main:hover {
     transform: scale(1.05);
 }
-
 .card-main img {
     width: 100%;
     display: block;
@@ -445,7 +448,9 @@ body{
     font-size: 18px;
     margin: 10px 0;
 }
-
+#event-meta{
+    margin-left: 180px;
+}
 .card-main p {
     color: #777;
     font-size: 14px;
@@ -802,9 +807,4 @@ body{
 .error-content a:hover {
     background-color: #E67E22;
 }
-
-
-
-
-
 
