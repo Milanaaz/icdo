@@ -40,24 +40,21 @@ function goToPage(pageNumber) {
 
 
 
+  document.addEventListener("DOMContentLoaded", function () {
+    const burgerMenu = document.querySelector(".burger-menu");
+    const navbarOptions = document.querySelector(".navbar-options");
 
-
-
-
-
-
-
-
-
-
-
-  document.addEventListener('DOMContentLoaded', function () {
-    const navbarToggle = document.querySelector('.navbar-toggle');
-    const navbarOptions = document.querySelector('.navbar-options');
-
-    if (navbarToggle && navbarOptions) {
-        navbarToggle.addEventListener('click', function () {
-            navbarOptions.classList.toggle('active');
-        });
+    function toggleMenu() {
+        navbarOptions.classList.toggle("active");
+        burgerMenu.classList.toggle("open");
     }
+
+    burgerMenu.addEventListener("click", toggleMenu);
+
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 768) {
+            navbarOptions.classList.remove("active");
+            burgerMenu.classList.remove("open");
+        }
+    });
 });

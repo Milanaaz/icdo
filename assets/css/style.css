@@ -39,11 +39,23 @@ body{
 }
 
 
+
+
+
+
+
+
+
+
+
 /* ----------------navbar - start ------------------------*/
 .navbar-top {
     height: 34px;
     align-self: stretch;
     background: #F7F7F7;
+    @media (max-width: 390px) {
+        display: none;
+    }
 }
 .navbar-top .container {
     display: flex;
@@ -54,12 +66,39 @@ body{
     font-weight: 400;
     line-height: 17.14px;
     letter-spacing: 0.5px;
+    margin: 0 auto;
 }
 .navbar-left {
     display: flex;
     align-items: center;
     flex-shrink: 0;
     margin-left: 18%;
+    @media (max-width: 390px) {
+        display: none;
+    }
+}
+@media (max-width: 390px) {
+
+    
+    .logo {
+        width: 162px;
+        height: 70px;
+    }
+    .navbar-options {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+        cursor: pointer;
+    }
+    .burger-menu span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        border-radius: 8px;
+        background-color: #555;
+    }
 }
 .navbar-left a {
     color: #696969;
@@ -81,6 +120,9 @@ body{
 .navbar-right {
     display: flex;
     margin-left: auto;
+    @media (max-width: 390px) {
+        display: none;
+    }
 }
 .divider1 {
     width: 1px;
@@ -95,6 +137,7 @@ body{
     justify-content: center;
     align-items: center;
     align-self: stretch;
+    margin: 0 auto;
 }
 .fixed-navbar {
     position: fixed;
@@ -108,19 +151,33 @@ body{
 .navbar-main .container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 340px;
+    justify-content: space-between;
+    gap: 280px;
+    @media (max-width: 390px) {
+        gap: 144px;
+    }
 }
+
+
+
+
+
+
+
+
+
 .navbar-options ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    gap: 20px;
     align-items: center;
 }
 .navbar-options ul li {
     position: relative;
     margin: 0 2px;
+    width: auto;
 }
 
 .navbar-options ul li a {
@@ -129,6 +186,7 @@ body{
     font-weight: 500;
     padding: 10px 15px;
     display: block;
+    white-space: nowrap; 
 }
 .navbar-options ul li a::after {
     content: "";
@@ -194,10 +252,13 @@ body{
 /* -------------main page - start ------------------------*/
 /* ----------------welcome page - start ------------------------*/
 .welcome-page {
-    background-image: url(/assets/img/back.png);
+    margin-top: 33px;
+    background-image: url(../img/back.png);
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    
 }
 
 .icdo-description {
@@ -212,6 +273,9 @@ body{
 
 .description {
     width: 1000px;
+    @media (max-width: 390px) {
+        width: 290px;
+    }
 }
 
 .description h2 {
@@ -221,6 +285,11 @@ body{
     font-size: 46.2px;
     font-weight: 700;
     padding-top: 60px;
+    @media (max-width: 390px) {
+        font-size: 32px;
+        line-height: 39px;
+    }
+   
 }
 
 .description p {
@@ -232,6 +301,11 @@ body{
     line-height: 30px;
     letter-spacing: 0.5px;
     padding-bottom: 20px;
+    @media (max-width: 390px) {
+        text-align: start;
+        line-height: 35px;
+    }
+
 }
 
 /* ----------------welcome page - end ---------------------*/
@@ -249,6 +323,10 @@ body{
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.16);
     color: #F39F07;
     text-align: center;
+    @media (max-width: 390px) {
+        width: 360px;
+        margin: 45px auto 0;
+    }
 }
 
 .icdo-box h2,
@@ -256,12 +334,18 @@ body{
     color: #F39F07;
     text-align: center;
     font-family: "Roboto", serif;
+    @media (max-width: 390px) {
+        width: 290px;
+    }
 }
 
 .icdo-box h2 {
     font-size: 30px;
     font-weight: 300;
     line-height: 35px;
+    @media (max-width: 390px) {
+        font-size: 20px;
+    }
 }
 
 .icdo-box h3 {
@@ -276,6 +360,11 @@ body{
     align-items: center;
     gap: 25px;
     margin-top: 80px;
+    @media (max-width: 390px) {
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 45px;
+    }
 }
 
 .language-box {
@@ -284,6 +373,12 @@ body{
     flex: 1;
     height: 189px;
     align-items: center;
+    @media (max-width: 390px) {
+        border: none;
+        text-align: left;
+        align-items: start;
+        width: 290px;
+    }
 }
 
 .language-box:last-child {
@@ -312,8 +407,16 @@ body{
     font-weight: 400;
     line-height: 23px;
     margin-top: 25px;
+    @media (max-width: 390px) {
+        text-align: left;
+        margin-top: 0;
+    }
 }
-
+@media (max-width: 390px) {
+       video {
+        display: none;
+       } 
+}
 .language-box p {
     color: #4C4C4C;
     font-size: 14px;
@@ -331,6 +434,11 @@ body{
     width: 845.5px;
     height: 563.66px;
     transition: filter 0.4s ease;
+    @media (max-width: 390px) {
+        width: 360px;
+        height: auto;
+        margin: 0 auto;
+    }
 }
 .article:hover {
     filter: brightness(0.8); 
@@ -338,7 +446,16 @@ body{
 .card1-main {
     display: flex;
     gap: 30px;
+    @media (max-width: 390px) {
+        width: 360px;
+        flex-direction: column;
+        gap: 15px;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+    }
 }
+
 .content-for-article {
     height: 550px;
     background-color: #FFF;
@@ -349,6 +466,9 @@ body{
     font-size: 13px;
     font-weight: 400;
     line-height: 22px;
+    @media (max-width: 390px) {
+        height: 313px;
+    }
 }
 
 .content-for-article h3 {
@@ -395,6 +515,10 @@ body{
 .content-for-article .btn {
     margin-top: 35px;
     margin-right: 135px;
+    @media (max-width: 390px) {
+        margin-right: 249px;
+        
+    }
 }
 .grid1 {
     display: grid;
@@ -411,6 +535,7 @@ body{
     transition: transform 0.3s ease-in-out;
     position: relative;
     padding-bottom: 31px;
+   
 }
 
 .card-main:hover {
@@ -507,19 +632,35 @@ body{
 .ranking {
     height: 146px;
     background-color: #F79830;
+    @media (max-width: 390px) {
+       
+        height: auto;
+        padding: 45px 15px;
+    }
 }
 
 .ranking .container {
     display: flex;
+    @media (max-width: 390px) {
+       flex-direction: column;
+       
+    }
 }
 
 .ranking-context {
     display: flex;
     margin-top: 50px;
+    
 }
 
 .ranking-context:not(:first-child) {
     margin-left: 180px;
+}
+@media (max-width: 390px) {
+    .ranking-context:not(:first-child) {
+        margin-left: 0;
+    }  
+        
 }
 
 .ranking-text h5,
@@ -562,10 +703,19 @@ body{
     flex-direction: column;
     align-items: flex-start;
     background: #F7F7F7;
+    @media (max-width: 390px) {
+       margin: 0 auto  ;
+        width: auto;
+        height: 350px;
+    }
 }
 
 #icdo-read-box {
     height: 370px;
+    @media (max-width: 390px) {
+       height: 454px;
+        
+    }
 }
 
 .icdo-read-box .btn {
@@ -578,6 +728,11 @@ body{
     align-items: center;
     gap: 170px;
     margin-bottom: 40px;
+    @media (max-width: 390px) {
+       flex-direction: column;
+       gap: 5px;
+        
+    }
 }
 
 .icdo-read-box h2 {
@@ -586,6 +741,9 @@ body{
     font-size: 42px;
     font-weight: 700;
     line-height: 42px;
+    @media (max-width: 390px) {
+       width: 250px;
+    }
 }
 
 .icdo-read-box .btn {
@@ -610,14 +768,27 @@ body{
 }
 
 .icdo-detail {
-    background-image: url(/assets/img/back2.png);
+    background-image: url(../img/back2.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 415px;
+    @media (max-width: 390px) {
+       
+        height: auto;
+    }
 }
-
+@media (max-width: 390px) {
+      .icdo-detail-context {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      } 
+        
+}
 .icdo-detail-box {
     border: 4px solid #F79830;
     width: 262.5px;
@@ -666,6 +837,10 @@ body{
     height: 294px;
     padding-top: 1px;
     border-top: 1px solid #E6E6E6;
+    @media (max-width: 390px) {
+       height: auto;
+        
+    }
 }
 
 .footer-content {
@@ -696,6 +871,16 @@ body{
 #footer-column p {
     margin-left: 50px;
     margin-bottom: 40px;
+    @media (max-width: 390px) {
+       
+        margin: 0 ;
+    }
+}
+@media (max-width: 390px) {
+    #footer-column p:nth-child(1){
+        margin-bottom: 30px;
+    }     
+        
 }
 
 .footer-column a {
@@ -807,4 +992,9 @@ body{
 .error-content a:hover {
     background-color: #E67E22;
 }
+
+
+
+
+
 

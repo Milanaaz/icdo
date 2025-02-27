@@ -24,6 +24,22 @@
 .about-us .text-color {
     color: #F39F07;
 }
+@media (max-width:390px) {
+    .container {
+        width: 360px;
+        margin: 0 auto;
+    }
+    .about-us {
+        padding: 15px;
+    }
+    .activity-title {
+        width: 330px;
+        margin: 0 auto ;
+    }
+    .main {
+        margin-top: 70px;
+    }
+}
 .structure h2 {
     color: #4C4C4C;
     font-family: Roboto;
@@ -41,6 +57,9 @@
     justify-content: center;
     gap: 30px;
     margin-top: 80px;
+    @media (max-width:390px) {
+        flex-direction: column;
+    }
 }
 .structure-box {
     display: flex;

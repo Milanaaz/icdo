@@ -1,8 +1,12 @@
 #contact-welcome-page{
-    background-image: url(/assets/img/news/news-bg1.png);
+    background-image: url(../img/news/news-bg1.png);
     height: 350px;
     background-size: cover;
     background-repeat: no-repeat; 
+    @media (max-width: 390px) {
+        margin-top: 33px;
+        padding: 15px;
+    }
 }
 #grid1{
     margin-top: 40px;
