@@ -26,7 +26,7 @@
 }
 @media (max-width:390px) {
     .container {
-        width: 360px;
+        width: 310px;
         margin: 0 auto;
     }
     .about-us {
@@ -34,7 +34,7 @@
     }
     .activity-title {
         width: 330px;
-        margin: 0 auto ;
+        margin: -40px auto ;
     }
     .main {
         margin-top: 70px;
@@ -70,6 +70,9 @@
     width: 370px;
     height: 174px;
     transition: background-color 0.3s ease;
+    @media (max-width:390px) {
+        width: 330px;;
+    }
 }
 .structure-box:hover {
     background-color: #F5E1C8;

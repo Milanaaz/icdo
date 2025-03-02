@@ -4,10 +4,10 @@
     background-size: cover;
     background-repeat: no-repeat; 
     @media (max-width: 390px) {
-        margin-top: 33px;
-       padding: 15px;
+        margin-top: 0px;
+       padding: 0px 30px;
        background-position: center center; 
-       height: 247px;
+       height: 180px;
     }
 }
 .c-line{   
@@ -79,6 +79,9 @@
     font-style: normal;
     font-weight: 300;
     line-height: 35px; 
+    @media (max-width:390px) {
+        font-size: 22px;
+    }
 }
 .contact-row{
     display: flex;
@@ -95,6 +98,7 @@
     font-style: normal;
     font-weight: 300;
     line-height: 28px; 
+    
 }
 
 .con li img{
