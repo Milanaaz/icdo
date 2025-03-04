@@ -12,16 +12,25 @@
 #grid1{
     margin-top: 40px;
     margin-bottom: 50px;
+    @media (max-width: 390px) {
+        margin-left: 5px;
+    }
 }
 
 .pagination {
     display: flex;
     margin-left: 900px;
     margin-bottom: 50px;
+    @media (max-width: 390px) {
+        margin-left: 150px;
+    }
 }
   
 .pagination li {
     margin: 0 5px;
+    @media (max-width: 390px) {
+        margin: 0 3px;
+    }
 }
 .pagination a {
     padding: 10px 5px;
@@ -33,6 +42,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 19.5px; 
+    @media (max-width: 390px) {
+        font-size: 11px;
+    }
 }
   
 .pagination a:hover {
